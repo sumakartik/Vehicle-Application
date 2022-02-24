@@ -33,7 +33,7 @@ export default function TopBar() {
             {/* <MenuIcon /> */}
           </IconButton>
           <Typography
-            variant="h5"
+            variant="h2"
             noWrap
             component="div"
             sx={{ flexGrow: 1, alignSelf: 'flex-end' }}
