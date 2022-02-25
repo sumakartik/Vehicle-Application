@@ -31,6 +31,8 @@ import axios from "axios";
 // }
 
 function SearchBar() {
+  function handleSearchSubmit() {}
+  function handleSearchChange() {}
   return (
     <div className="main">
       <h1>VIN Search</h1>
@@ -40,7 +42,12 @@ function SearchBar() {
           variant="outlined"
           fullWidth
           label="Search"
-        />
+          onSubmit={(event) => {
+            handleSearchSubmit(event);
+          }}
+        >
+          <input type="text" onChange={handleSearchChange} />
+        </TextField>
       </div>
       {/* <List /> */}
     </div>
