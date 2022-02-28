@@ -5,32 +5,30 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-// import SearchIcon from "@mui/icons-material/Search";
 import Button from "@mui/material/Button";
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
+  color: "transparent",
   alignItems: "flex-start",
   paddingTop: theme.spacing(1),
   paddingBottom: theme.spacing(2),
   "@media all": {
     minHeight: 128,
   },
+  input: { color: "black" },
 }));
+
+// const useStyles = makeStyles({
+//   input: {
+//     color: "blue",
+//   },
+// });
 
 export default function TopBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" color="transparent">
         <StyledToolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            {/* <MenuIcon /> */}
-          </IconButton>
           <Typography
             variant="h2"
             noWrap
@@ -38,11 +36,14 @@ export default function TopBar() {
             sx={{
               flexGrow: 1,
               alignSelf: "center",
+              color: "black",
             }}
           >
             Welcome to the Vehicle Dictionary
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit" sx={{ color: "black" }}>
+            Login
+          </Button>
         </StyledToolbar>
       </AppBar>
     </Box>

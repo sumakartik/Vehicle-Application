@@ -5,7 +5,7 @@ import SearchBar from "./components/SearchBar";
 import { Routes, Route, Link } from "react-router-dom";
 import ReactDOM from "react-dom";
 import "./app.css";
-
+import "./car.jpeg";
 class App extends React.Component {
   constructor() {
     super();
@@ -30,7 +30,6 @@ class App extends React.Component {
     this.setState({ model: data.Results[0].Model });
     this.setState({ vehicleType: data.Results[0].VehicleType });
     this.setState({ trim: data.Results[0].Trim });
-    
   }
 
   getVehicleData(searchTerm) {
@@ -58,20 +57,39 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Link to="/">
+          <car />
+        </Link>
+        <img src="car.jpeg" alt="" />
         <TopBar />
         <main>
-        
+          {/* <Link to="/">
+            <car />
+          </Link>
+          <img src="car.jpeg" alt="" /> */}
           <SearchBar
             handleSearchChange={this.handleSearchChange}
             handleSearchClick={this.handleSearchClick}
             getVehicleData={this.getVehicleData}
           />
           <h2>PLEASE SEARCH A VIN TO LEARN VEHICLE SPECS</h2>
-          <h3> {this.state.manufacturer ? "Manufacturer: " + this.state.manufacturer: null} </h3>
+          <h3>
+            {" "}
+            {this.state.manufacturer
+              ? "Manufacturer: " + this.state.manufacturer
+              : null}{" "}
+          </h3>
           <h3> {this.state.make ? "Make: " + this.state.make : null} </h3>
           <h3> {this.state.model ? "Model: " + this.state.model : null} </h3>
-          <h3> {this.state.vehicleType ? "Type: " + this.state.vehicleType : null} </h3>
+          <h3>
+            {" "}
+            {this.state.vehicleType
+              ? "Type: " + this.state.vehicleType
+              : null}{" "}
+          </h3>
           <h3> {this.state.trim ? "Trim: " + this.state.trim : null} </h3>
+        </main>
+        {/* <footer>
           <div
             class="tenor-gif-embed"
             data-postid="23932350"
@@ -83,17 +101,7 @@ class App extends React.Component {
               Volkswagen Beetle Dancing GIF
             </a>
           </div>
-          {/* {/* from{" "}
-            <a href="https://tenor.com/search/volkswagen+beetle-gifs">
-              Volkswagen Beetle GIFs
-            </a>
-          </div>{" "}
-          <script
-            type="text/javascript"
-            async
-            src="https://tenor.com/embed.js"
-          ></script> */}
-        </main>
+        </footer> */}
       </div>
     );
   }

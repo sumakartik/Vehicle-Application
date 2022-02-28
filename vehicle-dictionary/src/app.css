@@ -1,14 +1,23 @@
 main {
-  background-color: #282c34;
-  color: white;
-  padding: 40px;
+  color: #cc5500;
+  padding: 200px;
   font-family: Arial;
   text-align: center;
-  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.carmagazine.co.uk%2Ffeatures%2Fcar-culture%2F2016%2Fa-year-in-photos-car-magazines-best-2016-pictures%2F&psig=AOvVaw0so-xLpCPVxY7C1ymAIVPo&ust=1646167802113000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLDCzJGjo_YCFQAAAAAdAAAAABAD') ;
+  font-size: larger;
+  font-weight: 900;
+}
+div {
+  background: url("car.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+footer {
+  text-align: center;
 }
 
 /* .mask1 {
     -webkit-mask-image: linear-gradient(to bottom, transparent 25%, black 75%);
     mask-image: linear-gradient(to bottom, transparent 25%, black 75%);
   } */
-  
