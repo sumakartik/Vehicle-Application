@@ -2,5 +2,9 @@
   "devDependencies": {
     "@testing-library/cypress": "^8.0.2",
     "cypress": "^9.5.0"
+  },
+  "dependencies": {
+    "mui-modal-provider": "^2.0.0",
+    "react-login-modal": "^1.2.1"
   }
 }
