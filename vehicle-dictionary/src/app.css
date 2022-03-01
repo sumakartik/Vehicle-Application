@@ -1,5 +1,5 @@
 main {
-  color: #cc5500;
+  color: #ffff00;
   padding: 200px;
   font-family: Arial;
   text-align: center;
@@ -16,8 +16,3 @@ div {
 footer {
   text-align: center;
 }
-
-/* .mask1 {
-    -webkit-mask-image: linear-gradient(to bottom, transparent 25%, black 75%);
-    mask-image: linear-gradient(to bottom, transparent 25%, black 75%);
-  } */

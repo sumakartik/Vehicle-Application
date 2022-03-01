@@ -63,10 +63,6 @@ class App extends React.Component {
         <img src="car.jpeg" alt="" />
         <TopBar />
         <main>
-          {/* <Link to="/">
-            <car />
-          </Link>
-          <img src="car.jpeg" alt="" /> */}
           <SearchBar
             handleSearchChange={this.handleSearchChange}
             handleSearchClick={this.handleSearchClick}
@@ -89,19 +85,6 @@ class App extends React.Component {
           </h3>
           <h3> {this.state.trim ? "Trim: " + this.state.trim : null} </h3>
         </main>
-        {/* <footer>
-          <div
-            class="tenor-gif-embed"
-            data-postid="23932350"
-            data-share-method="host"
-            data-aspect-ratio="1.33333"
-            data-width="100%"
-          >
-            <a href="https://tenor.com/view/volkswagen-beetle-dancing-dance-car-cars-gif-23932350">
-              Volkswagen Beetle Dancing GIF
-            </a>
-          </div>
-        </footer> */}
       </div>
     );
   }

@@ -1,3 +1,17 @@
+# Vehicle Dictionary
+
+Welcome to the Vehicle Dictionary. This is our first Project for SDI-08. It was created using React App. We used Cypress for our E2E testing and Jest for the unit testing. The API we used was <https://vpic.nhtsa.dot.gov/api/>, The National Highway Traffic Safety Association API.
+
+# Description
+
+In this app, you can search any VIN number and get a return. This will tell you about the Manufacturer, Make, Model, Type, and Trim associated with the vehicle. 
+
+# Team Members
+
+Joseph Homan
+Brandon Adams
+Suma Kartik
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
