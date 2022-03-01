@@ -2,7 +2,7 @@ import React from "react";
 import TopBar from "./components/TopBar";
 import Manufacturers from "./components/Manufacturers";
 import SearchBar from "./components/SearchBar";
-import { Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ReactDOM from "react-dom";
 import "./app.css";
 import "./car.jpeg";
@@ -56,6 +56,7 @@ class App extends React.Component {
 
   render() {
     return (
+      // <Routes>
       <div className="App">
         <Link to="/">
           <car />
@@ -85,6 +86,9 @@ class App extends React.Component {
           </h3>
           <h3> {this.state.trim ? "Trim: " + this.state.trim : null} </h3>
         </main>
+        {/* <Route>
+            <Route path="/Manufacturers" Component={Manufacturers} />
+          </Route> */}
       </div>
     );
   }

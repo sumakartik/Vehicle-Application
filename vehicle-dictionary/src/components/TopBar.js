@@ -53,6 +53,7 @@ export default function TopBar() {
               flexGrow: 1,
               alignSelf: "center",
               color: "black",
+              fontWeight: "bold",
             }}
           >
             Welcome to the Vehicle Dictionary
